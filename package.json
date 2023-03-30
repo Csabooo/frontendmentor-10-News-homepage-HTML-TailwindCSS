@@ -1,0 +1,17 @@
+{
+  "name": "10-news-homepage-html-tailwindcss",
+  "version": "1.0.0",
+  "description": "![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./styles/output.css",
+    "watch": "tailwindcss -i ./input.css -o ./styles/output.css --watch"
+   
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.0"
+  }
+}
