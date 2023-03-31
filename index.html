@@ -14,84 +14,93 @@
 </head>
 
 <body>
-  <!--   Hamburger menu -->
-  <header class="px-5 py-10">
-    <nav>
-      <img src="assets/images/logo.svg" alt="logo">
-      <section class="hidden flex-col" id="hamburger">
-        <a>Home</a>
-        <a>New</a>
-        <a>Popular</a>
-        <a>Trending</a>
-        <a>Categories</a>
+  <!--   Navbar menu -->
+  <header class="px-5 py-5 max-w-6xl mx-auto md:px-0">
+    <nav class="md:flex flex-row items-center justify-between">
+      <img class="" src="assets/images/logo.svg" alt="logo">
+      <section class="hidden md:flex flex-row text-very-dark-blue space-x-16 text-base">
+        <a href="#">Home</a>
+        <a href="#">New</a>
+        <a href="#">Popular</a>
+        <a href="#">Trending</a>
+        <a href="#">Categories</a>
       </section>
     </nav>
   </header>
 
-  <!-- The Bright Future of Web 3.0? -->
-  <div class="flex flex-col px-5 mx-auto ">
-    <img src="assets/images/image-web-3-mobile.jpg" alt="image-web-3-mobile">
-  </div>
+  <main class="md:grid grid-cols-3 gap-4 max-w-6xl mx-auto">
+    <!-- The Bright Future of Web 3.0? -->
+    <div class="flex flex-col px-5 mx-auto md:col-span-2 md:px-0">
+      <img class="md:hidden" src="assets/images/image-web-3-mobile.jpg" alt="image-web-3-mobile">
+      <img class="hidden md:block" src="assets/images/image-web-3-desktop.jpg" alt="image-web-3-mobile">
+    </div>
 
-  <!-- The Bright Future of Web 3.0? -->
-  <article class="flex flex-col text-left mx-auto px-5">
-    <h1>The Bright Future of Web 3.0?</h1>
-    <div>
-      <p class="py-5"> We dive into the next evolution of the web that claims to put the power of the platforms back into
+    <!-- The Bright Future of Web 3.0? -->
+
+    <section class="px-5 md:px-0">
+      <h1>The Bright Future of Web 3.0?</h1>
+    </section>
+
+    <section class="px-5 md:px-0">
+      <p class="py-5"> We dive into the next evolution of the web that claims to put the power of the platforms back
+        into
         the hands of
         the
         people.
         But is it really fulfilling its promise?</p>
-      <button class="w-1/2 px-5 py-5 bg-soft-red text-off-white font-semibold text-lg tracking-widest text-center">READ MORE</button>
-    </div>
-  </article>
+      <button class="w-1/2 px-5 py-5 bg-soft-red hover:bg-very-dark-blue text-off-white font-semibold text-lg tracking-widest text-center">READ MORE</button>
+    </section>
 
-  <!-- NEW -->
-  <article class="flex flex-col text-left bg-very-dark-blue text-off-white mx-5 my-20 py-8 px-6">
-    <h2 class="text-soft-orange ">New</h2>
-    <h3 class="pt-8">Hydrogen VS Electric Cars</h3>
-    <p class="text-grayish-blue border-b border-grayish-blue pb-10">Will hydrogen-fueled cars ever catch up to EVs?</p>
 
-    <h3 class="pt-6">The Downsides of AI Artistry</h3>
-    <p class="text-grayish-blue border-b border-grayish-blue pb-10">What are the possible adverse effects of on-demand AI image generation?</p>
+    <!-- NEW -->
+    <article
+      class="flex flex-col text-left bg-very-dark-blue text-off-white mx-5 my-20 py-8 px-6 col-start-3 row-start-1 row-end-3 md:my-0 md:mx-0  md:justify-center">
+      <h2 class="text-soft-orange ">New</h2>
+      <h3 class="pt-8">Hydrogen VS Electric Cars</h3>
+      <p class="text-grayish-blue border-b border-grayish-blue pb-10">Will hydrogen-fueled cars ever catch up to EVs?
+      </p>
 
-    <h3 class="pt-6">Is VC Funding Drying Up?</h3>
-    <p class="text-grayish-blue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-  </article>
+      <h3 class="pt-6">The Downsides of AI Artistry</h3>
+      <p class="text-grayish-blue border-b border-grayish-blue pb-10">What are the possible adverse effects of on-demand
+        AI image generation?</p>
 
-  <!-- LIST -->
-  <article class="px-5 flex  items-center">
-    <div class="container space-y-10">
-      <section class="flex flex-row space-x-4">
-        <img class="w-auto h-36" src="assets/images/image-retro-pcs.jpg" alt="image-retro">
-        <div class="mx-auto">
-          <h2 class="text-grayish-blue">01</h2>
-          <h3>Reviving Retro PCs</h3>
-          <p>What happens when old PCs are given modern upgrades?</p>
-        </div>
-      </section>
+      <h3 class="pt-6">Is VC Funding Drying Up?</h3>
+      <p class="text-grayish-blue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+    </article>
 
-      <section class="flex flex-row space-x-4">
-        <img class="w-auto h-36" src="assets/images//image-top-laptops.jpg" alt="image-laptops-keyboard">
-        <div class="mx-auto">
-          <h2 class="text-grayish-blue">02</h2>
-          <h3>10 Laptops of 2022</h3>
-          <p>Our best picks for various needs and budgets.</p>
-        </div>
-      </section>
+    <!-- LIST -->
 
-      <section class="flex flex-row space-x-4">
-        <img class="w-auto h-36" src="assets/images//image-gaming-growth.jpg" alt="image-gaming">
-        <div class="mx-auto">
-          <h2 class="text-grayish-blue">03</h2>
-          <h3>The Growth of Gaming</h3>
-          <p>How the pandemic has sparked fresh opportunities.</p>
-        </div>
-      </section>
 
-    </div>
-  </article>
-  <div class="attribution pt-20">
+    <section class="flex flex-row space-x-4 px-5 py-5 md:px-0">
+      <img class="w-auto h-36" src="assets/images/image-retro-pcs.jpg" alt="image-retro">
+      <div class="mx-auto">
+        <h2 class="text-grayish-blue">01</h2>
+        <h3>Reviving Retro PCs</h3>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </section>
+
+    <section class="flex flex-row space-x-4 px-5 py-5 md:px-0">
+      <img class="w-auto h-36" src="assets/images//image-top-laptops.jpg" alt="image-laptops-keyboard">
+      <div class="mx-auto">
+        <h2 class="text-grayish-blue">02</h2>
+        <h3>10 Laptops of 2022</h3>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+    </section>
+
+    <section class="flex flex-row space-x-4 px-5 py-5 md:px-0">
+      <img class="w-auto h-36" src="assets/images//image-gaming-growth.jpg" alt="image-gaming">
+      <div class="mx-auto">
+        <h2 class="text-grayish-blue">03</h2>
+        <h3>The Growth of Gaming</h3>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </section>
+
+
+  </main>
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl" target="_blank">Frontend
       Mentor</a>.
     Coded by <a href="https://www.frontendmentor.io/profile/Csabooo" target="_blank">Csaba Müller</a>.
